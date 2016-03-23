@@ -1,5 +1,5 @@
 
-
+## Name: Jacob Negri
 
 
 """
@@ -19,6 +19,11 @@ def main():
 def get_limits():
     minimum = int(input("Enter the minimum: "))
     maximum = int(input("Enter the maximum: "))
+
+    while maximum < minimum:
+        print("Maximum too low!")
+        maximum = int(input("Enter the maximum: "))
+
     return minimum, maximum
 
 
